@@ -58,6 +58,9 @@
 
 #include "tagging.h"
 
+enum RECORD_TAGS record_tags;
+enum ADDRESS_TAGS address_tags;
+
 void
 tag_marshal_record(struct evbuffer *evbuf, uint8_t tag, struct record *record)
 {
