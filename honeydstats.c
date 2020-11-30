@@ -78,6 +78,7 @@
 #include "analyze.h"
 
 struct event_base *libevent_base;
+struct event_base *stats_libevent_base;
 
 /* Stubs to make it compile */
 
