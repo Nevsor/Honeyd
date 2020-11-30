@@ -80,6 +80,8 @@
 #include "stats.h"
 #include "debug.h"
 
+struct event_base *libevent_base;
+
 int			honeyd_debug;
 
 static int		hsniff_show_version;

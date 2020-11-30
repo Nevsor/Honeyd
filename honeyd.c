@@ -128,6 +128,8 @@ struct conlru udplru;
 
 struct spoof no_spoof;	/* spoof settings for default packet processing */
 
+struct event_base *libevent_base;
+
 struct config config = {
 	NULL,
 	PATH_HONEYDDATA "/nmap-os-db",

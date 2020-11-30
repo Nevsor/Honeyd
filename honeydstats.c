@@ -77,6 +77,9 @@
 #include "honeydstats.h"
 #include "analyze.h"
 
+struct event_base *libevent_base;
+struct event_base *stats_libevent_base;
+
 /* Stubs to make it compile */
 
 int pcap_datalink(void *some) {	return (-1); }
