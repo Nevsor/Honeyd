@@ -75,6 +75,9 @@ static void stats_make_fd(struct addr *, u_short);
 static void stats_activate(struct stats *stats);
 static void stats_deactivate(struct stats *stats);
 
+enum measurement_tags_type measurement_tags;
+enum signature_tags_type signature_tags;
+
 /* Many static variables.  We don't like them */
 
 /* We might have other consumers of our created records */
