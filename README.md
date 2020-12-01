@@ -1,8 +1,7 @@
 Honeyd 1.6d
 ===========
 
-Copyright (c) 2002 - 2007 Niels Provos <provos@citi.umich.edu>
---------------------------------------------------------------
+**Copyright (c) 2002 - 2007 Niels Provos <provos@citi.umich.edu>**
 
 About Honeyd:
 -------------
