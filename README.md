@@ -1,6 +1,8 @@
 Honeyd 1.6d
+===========
+
 Copyright (c) 2002 - 2007 Niels Provos <provos@citi.umich.edu>
--------------------------------------------------------------------------
+--------------------------------------------------------------
 
 About Honeyd:
 -------------
@@ -29,31 +31,37 @@ Honeyd depends on several libraries:
 
 Make sure that you have them installed.
 
-
-
 To install dependencies in Ubuntu:
 
+```
 $ sudo apt-get install libevent-dev libdumbnet-dev libpcap-dev libpcre3-dev libedit-dev bison flex libtool automake
+```
 
 To install dependencies in ArchLinux:
 
+```
 # First get these packages
 $ pacman -S libdnet libpcap libevent pcre libedit bison flex libtool automake
+```
 
 For the regression framework to run, you need to install the Python
 module for libdnet.  You might need Python 2.4 for the best results.
 
 To build honeyd, run the following commands:
 
+```
 $ ./autogen.sh
 $ ./configure
 $ make
 $ sudo make install
+```
 
 If your compilation stops due to Python related errors, you can try to
 run configure as
 
+```
 $ ./configure --without-python
+```
 
 If you get compilation warnings on Linux bitch to the people responsible
 for the conditional header file idioticy.
@@ -64,11 +72,15 @@ Documentation:
 You can find documentation as part of this release.  The manual
 page can be accessed with the following commands:
 
+```
 $ man honeyd
+```
 
 or in the source directory
 
+```
 $ nroff -mdoc honeyd.8
+```
 
 More information can be found at http://www.honeyd.org/ and https://github.com/DataSoft/Honeyd
 
@@ -78,7 +90,9 @@ Running:
 Honeyd requires root-privileges for execution.  Normally, you run it
 with arguments similiar to the following:
 
+```
 $ sudo ./honeyd -d -f config.sample 10.0.0.0/8
+```
 
 It is strongly recommend that you run Honeyd in a chroot environment
 under a sandbox like systrace.  If possible, Honeyd drops privileges
@@ -138,19 +152,19 @@ Acknowledgments:
 
 The following people have helped with suggestions, ideas or code:
 
-  Dug Song <dugsong@monkey.org>
-  Jamie Van Randwyk <jvanran@sandia.gov>
-  Eric Thomas <edthoma@sandia.gov>
-  Christopher Kolina
-  Derek Cotton
-  Yuqing Mai
-  Lance Spitzner <lance@honeynet.org>
-  Christian Kreibich <christian.kreibich@cl.cam.ac.uk>
-  Bill Cheswick <ches@lumeta.com>
-  Lauren Oudot <oudot@rstack.org>
-  Jon Oberheide <jonojono@merit.edu>
-  David Clark <david.clark@datasoft.com>
-  Dan Petro <dan.petro@datasoft.com>
-  David Scott <david.scott@datasoft.com>
-  Addison Waldow <addison.waldow@datasoft.com>
-  Rami Rashid <RamiRashid959@msn.com>
+* Dug Song <dugsong@monkey.org>
+* Jamie Van Randwyk <jvanran@sandia.gov>
+* Eric Thomas <edthoma@sandia.gov>
+* Christopher Kolina
+* Derek Cotton
+* Yuqing Mai
+* Lance Spitzner <lance@honeynet.org>
+* Christian Kreibich <christian.kreibich@cl.cam.ac.uk>
+* Bill Cheswick <ches@lumeta.com>
+* Lauren Oudot <oudot@rstack.org>
+* Jon Oberheide <jonojono@merit.edu>
+* David Clark <david.clark@datasoft.com>
+* Dan Petro <dan.petro@datasoft.com>
+* David Scott <david.scott@datasoft.com>
+* Addison Waldow <addison.waldow@datasoft.com>
+* Rami Rashid <RamiRashid959@msn.com>
